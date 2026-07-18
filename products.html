@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Genuine Spare Parts | Sri Lekha Auto Spares &amp; Workshop</title>
+<meta name="description" content="Genuine engine, brake, electrical, body and accessory parts at Sri Lekha Auto Spares & Workshop — TVS King Certified Service Point, Chennai." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { tvsblue: "#003B8F", tvsnavy: "#041C3C", tvsyellow: "#FAC505", ice: "#EEF3FB", wagreen: "#25D366" },
+        fontFamily: { display: ["Poppins", "sans-serif"], body: ["Inter", "sans-serif"] },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body antialiased">
+
+<!-- ============ HEADER ============ -->
+<header x-data="{ open: false }" class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-full bg-tvsblue flex items-center justify-center text-tvsyellow font-display font-bold text-lg">SL</div>
+      <div class="leading-tight">
+        <p class="font-display font-bold text-tvsnavy text-lg">Sri Lekha</p>
+        <p class="text-[11px] tracking-wide text-slate-500 -mt-1">AUTO SPARES &amp; WORKSHOP</p>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 font-display font-medium text-sm text-tvsnavy">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="products.html" class="nav-link active">Products</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold text-sm px-4 py-2.5 rounded-full hover:brightness-95 transition">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a id="nav-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2.5 rounded-full hover:brightness-95 transition">
+        <i class="fa-brands fa-whatsapp text-lg"></i> Book on WhatsApp
+      </a>
+    </div>
+    <button @click="open = !open" class="lg:hidden w-10 h-10 flex items-center justify-center text-tvsnavy text-xl" aria-label="Toggle menu">
+      <i class="fa-solid" :class="open ? 'fa-xmark' : 'fa-bars'"></i>
+    </button>
+  </div>
+  <div x-cloak x-show="open" x-transition class="lg:hidden border-t border-slate-100 px-5 py-4 space-y-3 font-display font-medium text-tvsnavy">
+    <a href="index.html" class="block">Home</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="products.html" class="block">Products</a>
+    <div class="flex gap-3 pt-2">
+      <a href="tel:+919841677317" class="flex-1 text-center bg-tvsyellow text-tvsnavy font-semibold text-sm px-4 py-2.5 rounded-full">Call Now</a>
+      <a id="nav-wa-mobile" href="#" class="flex-1 text-center bg-wagreen text-white font-semibold text-sm px-4 py-2.5 rounded-full">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="bg-ice py-14 lg:py-20">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 text-center" data-aos="fade-up">
+    <p class="inline-flex items-center gap-2 text-xs font-display font-semibold tracking-widest text-tvsblue bg-white px-3 py-1.5 rounded-full mb-4">
+      <i class="fa-solid fa-toolbox"></i> GENUINE SPARE PARTS
+    </p>
+    <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-tvsnavy">Spare Parts</h1>
+    <p class="text-slate-600 max-w-lg mx-auto mt-4">TVS King compatible parts, always in stock or sourced quickly. Prices change often — message us on WhatsApp for today's rate.</p>
+  </div>
+</section>
+
+<!-- ============ ENGINE PARTS ============ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+  <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+    <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-gear"></i></div>
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Engine Parts</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Piston</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Piston','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Cylinder Kit</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Cylinder Kit','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Gasket</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Gasket','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Crank Shaft</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Crank Shaft','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Spark Plug</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Spark Plug','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ BRAKE PARTS ============ -->
+<section class="bg-ice py-16">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+      <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-circle-stop"></i></div>
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Brake Parts</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <article data-aos="fade-up" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy text-lg">Brake Shoe</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Brake Shoe','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy text-lg">Brake Drum</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Brake Drum','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy text-lg">Brake Cable</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Brake Cable','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy text-lg">Brake Lever</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Brake Lever','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ELECTRICAL ============ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+  <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+    <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-car-battery"></i></div>
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Electrical</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Battery</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Battery','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Headlight</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Headlight','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Horn</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Horn','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Switch</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Switch','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Indicators</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Indicators','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ BODY PARTS ============ -->
+<section class="bg-ice py-16">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+      <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-car-side"></i></div>
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Body Parts</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <article data-aos="fade-up" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Door</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Door','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Mirror</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Mirror','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Windshield</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Windshield','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Roof Cover</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Roof Cover','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+      <article data-aos="fade-up" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Bumper</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+          <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+        </div>
+        <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+        <a href="#" onclick="this.href=enquiryLink('Bumper','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACCESSORIES ============ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+  <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+    <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-star"></i></div>
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Accessories</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Seat Cover</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Seat Cover','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Floor Mat</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Floor Mat','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Mobile Holder</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Mobile Holder','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Side Cover</p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <span class="pill pill-compat"><i class="fa-solid fa-check"></i> TVS Compatible</span>
+        <span class="pill pill-available"><i class="fa-solid fa-circle"></i> Available</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Price: Contact Us</p>
+      <a href="#" onclick="this.href=enquiryLink('Side Cover','product')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CTA STRIP ============ -->
+<section class="bg-tvsblue">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
+    <div>
+      <p class="font-display font-bold text-white text-lg">Need Auto Repair or Spare Parts?</p>
+      <p class="text-white/80 text-sm mt-1">Contact our workshop today for quick service and genuine parts.</p>
+    </div>
+    <div class="flex gap-3">
+      <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a id="cta-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-tvsnavy text-slate-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-tvsyellow flex items-center justify-center text-tvsnavy font-display font-bold">SL</div>
+        <p class="font-display font-bold text-white">Sri Lekha Auto Spares &amp; Workshop</p>
+      </div>
+      <p class="text-sm">TVS King Certified Service Point — auto repair, painting and genuine spare parts in Chennai.</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Address</p>
+      <p class="text-sm leading-relaxed">No. 64, Kakkan Nagar, 2nd Main Road,<br>Ex Serviceman Colony, ASK Nagar,<br>PS Paramesh Nagar, Chennai - 600094.</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Contact</p>
+      <p class="text-sm flex items-center gap-2 mb-2"><i class="fa-solid fa-phone text-tvsyellow"></i> <a href="tel:+919841677317" class="hover:text-white">+91 98416 77317</a></p>
+      <p class="text-sm flex items-center gap-2"><i class="fa-brands fa-whatsapp text-wagreen"></i> <a id="footer-wa" href="#" class="hover:text-white">Chat on WhatsApp</a></p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Working Hours</p>
+      <p class="text-sm">Mon – Sat: 9:00 AM – 8:00 PM</p>
+      <p class="text-sm">Sunday: 10:00 AM – 5:00 PM</p>
+      <div class="flex gap-3 mt-4">
+        <a href="index.html" class="text-sm hover:text-white underline underline-offset-4">Home</a>
+        <a href="services.html" class="text-sm hover:text-white underline underline-offset-4">Services</a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">
+    © <span data-year></span> Sri Lekha Auto Spares &amp; Workshop. All rights reserved.
+  </div>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+  <a id="fab-wa" href="#" aria-label="Chat on WhatsApp" class="fab fab-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="tel:+919841677317" aria-label="Call now" class="fab fab-call"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+<script src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  const prodWaMsg = "Hello Sri Lekha Auto Spares & Workshop,\n\nI'd like to check availability of a spare part. Please contact me.";
+  const prodWaLink = buildWhatsAppLink(prodWaMsg);
+  ["nav-wa", "nav-wa-mobile", "cta-wa", "footer-wa", "fab-wa"].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.href = prodWaLink;
+  });
+</script>
+</body>
+</html>

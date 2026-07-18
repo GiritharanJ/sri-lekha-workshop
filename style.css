@@ -1,0 +1,157 @@
+/* ============================================================
+   Sri Lekha Auto Spares & Workshop — shared stylesheet
+   Tokens: TVS Blue #003B8F · Deep Navy #041C3C · TVS Yellow #FAC505
+            Ice #EEF3FB · WhatsApp Green #25D366 · Ink #101828
+   Type: Poppins (display) / Inter (body)
+   ============================================================ */
+
+:root {
+  --tvs-blue: #003B8F;
+  --tvs-blue-dark: #041C3C;
+  --tvs-yellow: #FAC505;
+  --ice: #EEF3FB;
+  --wa-green: #25D366;
+  --wa-green-dark: #1DA851;
+  --ink: #101828;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Reduced motion respected */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* ---------- Hero diagonal panel (echoes the TVS King banner split) ---------- */
+.hero-diagonal {
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media (min-width: 1024px) {
+  .hero-diagonal { clip-path: polygon(28% 0, 100% 0, 100% 100%, 0% 100%); }
+}
+
+.hero-pattern {
+  background-image:
+    repeating-linear-gradient(135deg, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 2px, transparent 2px, transparent 22px);
+}
+
+/* ---------- Certified seal badge — the site's signature element ---------- */
+.seal {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 108px;
+  border-radius: 9999px;
+  background: var(--tvs-blue-dark);
+  border: 3px dashed var(--tvs-yellow);
+  color: #fff;
+  text-align: center;
+  flex-shrink: 0;
+}
+.seal .seal-inner {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.62rem;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  padding: 0 10px;
+}
+.seal::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 9999px;
+  border: 1px solid rgba(250, 197, 5, 0.35);
+}
+.seal-sm { width: 64px; height: 64px; border-width: 2px; }
+.seal-sm .seal-inner { font-size: 0.5rem; }
+
+/* ---------- Focus visibility ---------- */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--tvs-yellow);
+  outline-offset: 2px;
+}
+
+/* ---------- Floating action buttons ---------- */
+.fab {
+  width: 58px;
+  height: 58px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: transform 0.15s ease;
+}
+.fab:hover { transform: translateY(-3px) scale(1.04); }
+.fab-whatsapp { background: var(--wa-green); }
+.fab-call { background: var(--tvs-yellow); color: var(--tvs-blue-dark); }
+
+/* ---------- Step connector for How It Works ---------- */
+.step-node {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background: var(--tvs-blue);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-line {
+  flex: 1;
+  height: 3px;
+  background-image: linear-gradient(90deg, var(--tvs-blue) 0 8px, transparent 8px 16px);
+  background-size: 16px 3px;
+  background-repeat: repeat-x;
+}
+
+/* ---------- Card lift ---------- */
+.lift-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.lift-card:hover { transform: translateY(-4px); box-shadow: 0 16px 30px rgba(0,59,143,0.12); }
+
+/* ---------- Badge pills ---------- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+.pill-compat { background: var(--ice); color: var(--tvs-blue); }
+.pill-available { background: #E9FBF1; color: var(--wa-green-dark); }
+
+/* ---------- Nav underline ---------- */
+.nav-link { position: relative; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -4px;
+  height: 2px; width: 0%;
+  background: var(--tvs-yellow);
+  transition: width 0.2s ease;
+}
+.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+/* ---------- Mobile menu ---------- */
+[x-cloak] { display: none !important; }

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sri Lekha Auto Spares &amp; Workshop | TVS King Certified Service Point, Chennai</title>
+<meta name="description" content="Sri Lekha Auto Spares & Workshop — TVS King Certified Service Point in Chennai. Auto repair, body painting, genuine spare parts and doorstep breakdown support." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          tvsblue: "#003B8F",
+          tvsnavy: "#041C3C",
+          tvsyellow: "#FAC505",
+          ice: "#EEF3FB",
+          wagreen: "#25D366",
+        },
+        fontFamily: {
+          display: ["Poppins", "sans-serif"],
+          body: ["Inter", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body antialiased">
+
+<!-- ============ HEADER ============ -->
+<header x-data="{ open: false }" class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-full bg-tvsblue flex items-center justify-center text-tvsyellow font-display font-bold text-lg">SL</div>
+      <div class="leading-tight">
+        <p class="font-display font-bold text-tvsnavy text-lg">Sri Lekha</p>
+        <p class="text-[11px] tracking-wide text-slate-500 -mt-1">AUTO SPARES &amp; WORKSHOP</p>
+      </div>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 font-display font-medium text-sm text-tvsnavy">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="products.html" class="nav-link">Products</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold text-sm px-4 py-2.5 rounded-full hover:brightness-95 transition">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a id="nav-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2.5 rounded-full hover:brightness-95 transition">
+        <i class="fa-brands fa-whatsapp text-lg"></i> Book on WhatsApp
+      </a>
+    </div>
+
+    <button @click="open = !open" class="lg:hidden w-10 h-10 flex items-center justify-center text-tvsnavy text-xl" aria-label="Toggle menu">
+      <i class="fa-solid" :class="open ? 'fa-xmark' : 'fa-bars'"></i>
+    </button>
+  </div>
+
+  <div x-cloak x-show="open" x-transition class="lg:hidden border-t border-slate-100 px-5 py-4 space-y-3 font-display font-medium text-tvsnavy">
+    <a href="index.html" class="block">Home</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="products.html" class="block">Products</a>
+    <div class="flex gap-3 pt-2">
+      <a href="tel:+919841677317" class="flex-1 text-center bg-tvsyellow text-tvsnavy font-semibold text-sm px-4 py-2.5 rounded-full">Call Now</a>
+      <a id="nav-wa-mobile" href="#" class="flex-1 text-center bg-wagreen text-white font-semibold text-sm px-4 py-2.5 rounded-full">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-10 items-center py-14 lg:py-20">
+    <div data-aos="fade-up">
+      <p class="inline-flex items-center gap-2 text-xs font-display font-semibold tracking-widest text-tvsblue bg-ice px-3 py-1.5 rounded-full mb-5">
+        <i class="fa-solid fa-shield-halved"></i> TVS KING CERTIFIED SERVICE POINT
+      </p>
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-tvsnavy leading-tight">
+        Sri Lekha Auto Spares &amp; Workshop
+      </h1>
+      <p class="mt-4 text-slate-600 max-w-md">
+        Trusted repair, painting and genuine parts for your TVS King and other vehicles — right here in Chennai.
+      </p>
+
+      <ul class="mt-6 space-y-2.5 font-display font-medium text-tvsnavy">
+        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wagreen"></i> Auto Repair</li>
+        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wagreen"></i> Body Painting</li>
+        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wagreen"></i> Genuine Spare Parts</li>
+        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wagreen"></i> Doorstep Breakdown Support</li>
+      </ul>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a id="hero-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold px-6 py-3.5 rounded-full shadow-lg shadow-wagreen/30 hover:brightness-95 transition">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Book on WhatsApp
+        </a>
+        <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold px-6 py-3.5 rounded-full shadow-lg shadow-tvsyellow/30 hover:brightness-95 transition">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+      </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-delay="100" class="relative">
+      <div class="relative rounded-3xl overflow-hidden hero-diagonal bg-tvsblue">
+        <div class="absolute inset-0 hero-pattern"></div>
+        <img src="images/tvs-king-banner.jpg" alt="TVS King certified service point banner with a TVS King auto rickshaw" class="w-full h-full object-cover mix-blend-luminosity opacity-90" />
+      </div>
+      <div class="absolute -bottom-6 -left-4 sm:-left-8 flex items-center gap-3 bg-white rounded-2xl shadow-xl p-3 pr-5">
+        <div class="seal seal-sm">
+          <span class="seal-inner">TVS KING<br>CERTIFIED</span>
+        </div>
+        <div class="text-xs text-slate-500 leading-tight">
+          <p class="font-display font-semibold text-tvsnavy text-sm">Certified Service Point</p>
+          <p>No. 64, Kakkan Nagar, Chennai</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA STRIP ============ -->
+<section class="bg-tvsnavy">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
+    <div>
+      <p class="font-display font-bold text-white text-lg">Need Auto Repair or Spare Parts?</p>
+      <p class="text-slate-300 text-sm mt-1">Contact our workshop today for quick service and genuine parts.</p>
+    </div>
+    <div class="flex gap-3">
+      <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a id="cta1-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+  <div data-aos="fade-right">
+    <p class="font-display font-semibold text-tvsblue text-sm tracking-widest">ABOUT THE WORKSHOP</p>
+    <h2 class="font-display font-bold text-3xl text-tvsnavy mt-2">
+      Serving Chennai customers with trusted auto repair and genuine spare parts.
+    </h2>
+    <div class="grid sm:grid-cols-2 gap-5 mt-8">
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-user-gear text-tvsblue text-xl mt-1"></i>
+        <p class="font-display font-medium text-tvsnavy">Experienced mechanics</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-tags text-tvsblue text-xl mt-1"></i>
+        <p class="font-display font-medium text-tvsnavy">Affordable pricing</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-award text-tvsblue text-xl mt-1"></i>
+        <p class="font-display font-medium text-tvsnavy">Quality workmanship</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-truck-fast text-tvsblue text-xl mt-1"></i>
+        <p class="font-display font-medium text-tvsnavy">Fast delivery</p>
+      </div>
+    </div>
+  </div>
+  <div data-aos="fade-left" class="relative">
+    <img src="images/tvs-king-banner.jpg" alt="Sri Lekha Auto Spares and Workshop banner" class="rounded-3xl shadow-xl w-full object-cover aspect-[4/3]" />
+    <div class="absolute -top-5 -right-5 seal hidden sm:flex">
+      <span class="seal-inner">CERTIFIED<br>SERVICE<br>POINT</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECIALTIES ============ -->
+<section class="bg-ice py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-xl mx-auto" data-aos="fade-up">
+      <p class="font-display font-semibold text-tvsblue text-sm tracking-widest">WHAT WE DO</p>
+      <h2 class="font-display font-bold text-3xl text-tvsnavy mt-2">Our Specialties</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div data-aos="fade-up" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <div class="w-14 h-14 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-2xl mb-4"><i class="fa-solid fa-gears"></i></div>
+        <p class="font-display font-semibold text-tvsnavy">Engine Repair</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <div class="w-14 h-14 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-2xl mb-4"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+        <p class="font-display font-semibold text-tvsnavy">Painting Works</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <div class="w-14 h-14 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-2xl mb-4"><i class="fa-solid fa-car-side"></i></div>
+        <p class="font-display font-semibold text-tvsnavy">Body Repair</p>
+      </div>
+      <div data-aos="fade-up" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <div class="w-14 h-14 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-2xl mb-4"><i class="fa-solid fa-dharmachakra"></i></div>
+        <p class="font-display font-semibold text-tvsnavy">Wheel Service</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <div class="w-14 h-14 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-2xl mb-4"><i class="fa-solid fa-car-battery"></i></div>
+        <p class="font-display font-semibold text-tvsnavy">Battery Replacement</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <div class="w-14 h-14 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-2xl mb-4"><i class="fa-solid fa-toolbox"></i></div>
+        <p class="font-display font-semibold text-tvsnavy">Genuine Spare Parts</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA STRIP 2 ============ -->
+<section class="bg-tvsnavy">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
+    <div>
+      <p class="font-display font-bold text-white text-lg">Need Auto Repair or Spare Parts?</p>
+      <p class="text-slate-300 text-sm mt-1">Contact our workshop today for quick service and genuine parts.</p>
+    </div>
+    <div class="flex gap-3">
+      <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a id="cta2-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="bg-tvsblue py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-xl mx-auto" data-aos="fade-up">
+      <p class="font-display font-semibold text-tvsyellow text-sm tracking-widest">WHY CHOOSE US</p>
+      <h2 class="font-display font-bold text-3xl text-white mt-2">Reasons Chennai trusts Sri Lekha</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 mt-10 max-w-4xl mx-auto">
+      <div data-aos="fade-up" class="flex items-center gap-3 text-white font-display font-medium"><i class="fa-solid fa-certificate text-tvsyellow"></i> Certified Mechanics</div>
+      <div data-aos="fade-up" data-aos-delay="50" class="flex items-center gap-3 text-white font-display font-medium"><i class="fa-solid fa-toolbox text-tvsyellow"></i> Genuine Spare Parts</div>
+      <div data-aos="fade-up" data-aos-delay="100" class="flex items-center gap-3 text-white font-display font-medium"><i class="fa-solid fa-bolt text-tvsyellow"></i> Quick Service</div>
+      <div data-aos="fade-up" class="flex items-center gap-3 text-white font-display font-medium"><i class="fa-solid fa-indian-rupee-sign text-tvsyellow"></i> Affordable Price</div>
+      <div data-aos="fade-up" data-aos-delay="50" class="flex items-center gap-3 text-white font-display font-medium"><i class="fa-solid fa-handshake text-tvsyellow"></i> Friendly Support</div>
+      <div data-aos="fade-up" data-aos-delay="100" class="flex items-center gap-3 text-white font-display font-medium"><i class="fa-solid fa-screwdriver-wrench text-tvsyellow"></i> Experienced Workshop</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-xl mx-auto" data-aos="fade-up">
+      <p class="font-display font-semibold text-tvsblue text-sm tracking-widest">THE PROCESS</p>
+      <h2 class="font-display font-bold text-3xl text-tvsnavy mt-2">How It Works</h2>
+    </div>
+
+    <div class="mt-12 hidden lg:flex items-center" data-aos="fade-up">
+      <div class="flex-1 text-center px-2">
+        <div class="step-node mx-auto">1</div>
+        <p class="font-display font-medium text-tvsnavy text-sm mt-3">Contact us on WhatsApp</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="flex-1 text-center px-2">
+        <div class="step-node mx-auto">2</div>
+        <p class="font-display font-medium text-tvsnavy text-sm mt-3">Share vehicle problem</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="flex-1 text-center px-2">
+        <div class="step-node mx-auto">3</div>
+        <p class="font-display font-medium text-tvsnavy text-sm mt-3">Receive estimate</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="flex-1 text-center px-2">
+        <div class="step-node mx-auto">4</div>
+        <p class="font-display font-medium text-tvsnavy text-sm mt-3">Visit workshop</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="flex-1 text-center px-2">
+        <div class="step-node mx-auto">5</div>
+        <p class="font-display font-medium text-tvsnavy text-sm mt-3">Vehicle delivered</p>
+      </div>
+    </div>
+
+    <!-- mobile vertical version -->
+    <div class="lg:hidden mt-10 space-y-6 max-w-sm mx-auto">
+      <div class="flex items-center gap-4"><div class="step-node">1</div><p class="font-display font-medium text-tvsnavy">Contact us on WhatsApp</p></div>
+      <div class="flex items-center gap-4"><div class="step-node">2</div><p class="font-display font-medium text-tvsnavy">Share vehicle problem</p></div>
+      <div class="flex items-center gap-4"><div class="step-node">3</div><p class="font-display font-medium text-tvsnavy">Receive estimate</p></div>
+      <div class="flex items-center gap-4"><div class="step-node">4</div><p class="font-display font-medium text-tvsnavy">Visit workshop</p></div>
+      <div class="flex items-center gap-4"><div class="step-node">5</div><p class="font-display font-medium text-tvsnavy">Vehicle delivered</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="bg-ice py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-xl mx-auto" data-aos="fade-up">
+      <p class="font-display font-semibold text-tvsblue text-sm tracking-widest">TESTIMONIALS</p>
+      <h2 class="font-display font-bold text-3xl text-tvsnavy mt-2">Customer Reviews</h2>
+    </div>
+
+    <div class="swiper reviews-swiper mt-10">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide h-auto">
+          <div class="bg-white rounded-2xl p-6 shadow-sm h-full">
+            <div class="text-tvsyellow mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-tvsnavy font-medium">"Very good mechanic."</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto">
+          <div class="bg-white rounded-2xl p-6 shadow-sm h-full">
+            <div class="text-tvsyellow mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-tvsnavy font-medium">"Original spare parts."</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto">
+          <div class="bg-white rounded-2xl p-6 shadow-sm h-full">
+            <div class="text-tvsyellow mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-tvsnavy font-medium">"Painting quality excellent."</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-pagination flex justify-center gap-2 mt-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING FORM ============ -->
+<section id="book" class="py-16 lg:py-24">
+  <div class="max-w-2xl mx-auto px-5 lg:px-8" data-aos="fade-up">
+    <div class="text-center">
+      <p class="font-display font-semibold text-tvsblue text-sm tracking-widest">QUICK BOOKING</p>
+      <h2 class="font-display font-bold text-3xl text-tvsnavy mt-2">Send Us Your Vehicle Details</h2>
+      <p class="text-slate-500 mt-2 text-sm">Fill this short form — it opens WhatsApp with your details pre-filled, ready to send.</p>
+    </div>
+
+    <form x-data="bookingForm()" @submit.prevent="submit" class="mt-8 bg-white border border-slate-100 shadow-sm rounded-3xl p-6 sm:p-8 space-y-5">
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-display font-medium text-tvsnavy mb-1.5">Customer Name</label>
+          <input x-model="name" type="text" required placeholder="e.g. Ravi" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:border-tvsblue outline-none" />
+        </div>
+        <div>
+          <label class="block text-sm font-display font-medium text-tvsnavy mb-1.5">Phone Number</label>
+          <input x-model="phone" type="tel" required placeholder="e.g. 9876543210" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:border-tvsblue outline-none" />
+        </div>
+        <div>
+          <label class="block text-sm font-display font-medium text-tvsnavy mb-1.5">Vehicle Model</label>
+          <input x-model="vehicleModel" type="text" placeholder="e.g. TVS King" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:border-tvsblue outline-none" />
+        </div>
+        <div>
+          <label class="block text-sm font-display font-medium text-tvsnavy mb-1.5">Vehicle Number</label>
+          <input x-model="vehicleNumber" type="text" placeholder="e.g. TN01AB1234" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:border-tvsblue outline-none" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-display font-medium text-tvsnavy mb-1.5">Select Service</label>
+        <select x-model="service" required class="w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:border-tvsblue outline-none bg-white">
+          <option value="" disabled selected>Choose a service</option>
+          <option>Engine Repair</option>
+          <option>Clutch Repair</option>
+          <option>Brake Repair</option>
+          <option>Gear Box</option>
+          <option>Suspension</option>
+          <option>Battery Replacement</option>
+          <option>Oil Change</option>
+          <option>General Service</option>
+          <option>Vehicle Inspection</option>
+          <option>Full Body Painting</option>
+          <option>Door / Panel Painting</option>
+          <option>Scratch Removal</option>
+          <option>Dent Repair</option>
+          <option>Color Matching</option>
+          <option>Bumper Painting</option>
+          <option>Polishing</option>
+          <option>Body Welding</option>
+          <option>Frame Repair</option>
+          <option>Metal Fabrication</option>
+          <option>Breakdown Assistance</option>
+          <option>Vehicle Pickup</option>
+          <option>Spare Parts Enquiry</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-display font-medium text-tvsnavy mb-1.5">Description</label>
+        <textarea x-model="description" rows="3" placeholder="Describe the problem..." class="w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:border-tvsblue outline-none"></textarea>
+      </div>
+
+      <div>
+        <label class="block text-sm font-display font-medium text-tvsnavy mb-1.5">Upload Image <span class="text-slate-400 font-normal">(optional)</span></label>
+        <input @change="onFile" type="file" accept="image/*" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-ice file:text-tvsblue file:font-display file:font-medium" />
+        <p class="text-xs text-slate-400 mt-1" x-show="fileName" x-text="'Selected: ' + fileName"></p>
+        <p class="text-xs text-slate-400 mt-1">We'll ask you to share the photo directly in WhatsApp.</p>
+      </div>
+
+      <button type="submit" :disabled="!isValid" :class="isValid ? 'bg-wagreen hover:brightness-95' : 'bg-slate-300 cursor-not-allowed'" class="w-full inline-flex items-center justify-center gap-2 text-white font-display font-semibold px-6 py-3.5 rounded-full transition">
+        <i class="fa-brands fa-whatsapp text-xl"></i> Send to WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section class="pb-16 lg:pb-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8" data-aos="fade-up">
+    <div class="rounded-3xl overflow-hidden shadow-sm border border-slate-100">
+      <iframe
+        title="Sri Lekha Auto Spares & Workshop location map"
+        src="https://maps.google.com/maps?q=Kakkan%20Nagar%2C%20Ex%20Serviceman%20Colony%2C%20ASK%20Nagar%2C%20Paramesh%20Nagar%2C%20Chennai%20600094&z=15&output=embed"
+        class="w-full h-80 sm:h-96 border-0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-tvsnavy text-slate-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-tvsyellow flex items-center justify-center text-tvsnavy font-display font-bold">SL</div>
+        <p class="font-display font-bold text-white">Sri Lekha Auto Spares &amp; Workshop</p>
+      </div>
+      <p class="text-sm">TVS King Certified Service Point — auto repair, painting and genuine spare parts in Chennai.</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Address</p>
+      <p class="text-sm leading-relaxed">No. 64, Kakkan Nagar, 2nd Main Road,<br>Ex Serviceman Colony, ASK Nagar,<br>PS Paramesh Nagar, Chennai - 600094.</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Contact</p>
+      <p class="text-sm flex items-center gap-2 mb-2"><i class="fa-solid fa-phone text-tvsyellow"></i> <a href="tel:+919841677317" class="hover:text-white">+91 98416 77317</a></p>
+      <p class="text-sm flex items-center gap-2"><i class="fa-brands fa-whatsapp text-wagreen"></i> <a id="footer-wa" href="#" class="hover:text-white">Chat on WhatsApp</a></p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Working Hours</p>
+      <p class="text-sm">Mon – Sat: 9:00 AM – 8:00 PM</p>
+      <p class="text-sm">Sunday: 10:00 AM – 5:00 PM</p>
+      <div class="flex gap-3 mt-4">
+        <a href="services.html" class="text-sm hover:text-white underline underline-offset-4">Services</a>
+        <a href="products.html" class="text-sm hover:text-white underline underline-offset-4">Products</a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">
+    © <span data-year></span> Sri Lekha Auto Spares &amp; Workshop. All rights reserved.
+  </div>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+  <a id="fab-wa" href="#" aria-label="Chat on WhatsApp" class="fab fab-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="tel:+919841677317" aria-label="Call now" class="fab fab-call"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+<script src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+  const homeWaMsg = "Hello Sri Lekha Auto Spares & Workshop,\n\nI'd like to book a service. Please contact me.";
+  const homeWaLink = buildWhatsAppLink(homeWaMsg);
+  ["nav-wa", "nav-wa-mobile", "hero-wa", "cta1-wa", "cta2-wa", "footer-wa", "fab-wa"].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.href = homeWaLink;
+  });
+</script>
+</body>
+</html>

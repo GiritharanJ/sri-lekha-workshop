@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services | Sri Lekha Auto Spares &amp; Workshop</title>
+<meta name="description" content="Mechanical, electrical, painting, welding and emergency services at Sri Lekha Auto Spares & Workshop — TVS King Certified Service Point, Chennai." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { tvsblue: "#003B8F", tvsnavy: "#041C3C", tvsyellow: "#FAC505", ice: "#EEF3FB", wagreen: "#25D366" },
+        fontFamily: { display: ["Poppins", "sans-serif"], body: ["Inter", "sans-serif"] },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body antialiased">
+
+<!-- ============ HEADER ============ -->
+<header x-data="{ open: false }" class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-full bg-tvsblue flex items-center justify-center text-tvsyellow font-display font-bold text-lg">SL</div>
+      <div class="leading-tight">
+        <p class="font-display font-bold text-tvsnavy text-lg">Sri Lekha</p>
+        <p class="text-[11px] tracking-wide text-slate-500 -mt-1">AUTO SPARES &amp; WORKSHOP</p>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 font-display font-medium text-sm text-tvsnavy">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="products.html" class="nav-link">Products</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold text-sm px-4 py-2.5 rounded-full hover:brightness-95 transition">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a id="nav-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2.5 rounded-full hover:brightness-95 transition">
+        <i class="fa-brands fa-whatsapp text-lg"></i> Book on WhatsApp
+      </a>
+    </div>
+    <button @click="open = !open" class="lg:hidden w-10 h-10 flex items-center justify-center text-tvsnavy text-xl" aria-label="Toggle menu">
+      <i class="fa-solid" :class="open ? 'fa-xmark' : 'fa-bars'"></i>
+    </button>
+  </div>
+  <div x-cloak x-show="open" x-transition class="lg:hidden border-t border-slate-100 px-5 py-4 space-y-3 font-display font-medium text-tvsnavy">
+    <a href="index.html" class="block">Home</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="products.html" class="block">Products</a>
+    <div class="flex gap-3 pt-2">
+      <a href="tel:+919841677317" class="flex-1 text-center bg-tvsyellow text-tvsnavy font-semibold text-sm px-4 py-2.5 rounded-full">Call Now</a>
+      <a id="nav-wa-mobile" href="#" class="flex-1 text-center bg-wagreen text-white font-semibold text-sm px-4 py-2.5 rounded-full">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="bg-ice py-14 lg:py-20">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 text-center" data-aos="fade-up">
+    <p class="inline-flex items-center gap-2 text-xs font-display font-semibold tracking-widest text-tvsblue bg-white px-3 py-1.5 rounded-full mb-4">
+      <i class="fa-solid fa-screwdriver-wrench"></i> WHAT WE SERVICE
+    </p>
+    <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-tvsnavy">Our Services</h1>
+    <p class="text-slate-600 max-w-lg mx-auto mt-4">From engine repair to full body painting — certified mechanics, honest estimates, and genuine parts every time.</p>
+  </div>
+</section>
+
+<!-- ============ MECHANICAL SERVICES ============ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+  <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+    <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-gears"></i></div>
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Mechanical Services</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Engine Repair</p>
+      <ul class="text-sm text-slate-500 mt-3 space-y-1">
+        <li>Engine diagnosis</li>
+        <li>Complete engine repair</li>
+        <li>Affordable labour</li>
+      </ul>
+      <a href="#" onclick="this.href=enquiryLink('Engine Repair','service')" class="mt-5 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp text-base"></i> Enquire on WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Clutch Repair</p>
+      <ul class="text-sm text-slate-500 mt-3 space-y-1">
+        <li>Clutch plate &amp; cable check</li>
+        <li>Smooth gear engagement</li>
+        <li>Affordable labour</li>
+      </ul>
+      <a href="#" onclick="this.href=enquiryLink('Clutch Repair','service')" class="mt-5 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp text-base"></i> Enquire on WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Brake Repair</p>
+      <ul class="text-sm text-slate-500 mt-3 space-y-1">
+        <li>Brake shoe &amp; drum check</li>
+        <li>Safety-first inspection</li>
+        <li>Affordable labour</li>
+      </ul>
+      <a href="#" onclick="this.href=enquiryLink('Brake Repair','service')" class="mt-5 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp text-base"></i> Enquire on WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Gear Box</p>
+      <ul class="text-sm text-slate-500 mt-3 space-y-1">
+        <li>Gear box diagnosis</li>
+        <li>Overhaul &amp; repair</li>
+        <li>Affordable labour</li>
+      </ul>
+      <a href="#" onclick="this.href=enquiryLink('Gear Box','service')" class="mt-5 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp text-base"></i> Enquire on WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy text-lg">Suspension</p>
+      <ul class="text-sm text-slate-500 mt-3 space-y-1">
+        <li>Shock absorber check</li>
+        <li>Ride comfort restored</li>
+        <li>Affordable labour</li>
+      </ul>
+      <a href="#" onclick="this.href=enquiryLink('Suspension','service')" class="mt-5 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp text-base"></i> Enquire on WhatsApp</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ELECTRICAL WORK ============ -->
+<section class="bg-ice py-16">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+      <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-bolt"></i></div>
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Electrical Work</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <article data-aos="fade-up" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Battery Replacement</p>
+        <a href="#" onclick="this.href=enquiryLink('Battery Replacement','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Oil Change</p>
+        <a href="#" onclick="this.href=enquiryLink('Oil Change','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">General Service</p>
+        <a href="#" onclick="this.href=enquiryLink('General Service','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Vehicle Inspection</p>
+        <a href="#" onclick="this.href=enquiryLink('Vehicle Inspection','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAINTING WORKS ============ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+  <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+    <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Painting Works</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Full Body Painting</p>
+      <a href="#" onclick="this.href=enquiryLink('Full Body Painting','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Door Painting</p>
+      <a href="#" onclick="this.href=enquiryLink('Door Painting','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Panel Painting</p>
+      <a href="#" onclick="this.href=enquiryLink('Panel Painting','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Scratch Removal</p>
+      <a href="#" onclick="this.href=enquiryLink('Scratch Removal','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+    <article data-aos="fade-up" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Dent Repair</p>
+      <a href="#" onclick="this.href=enquiryLink('Dent Repair','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Color Matching</p>
+      <a href="#" onclick="this.href=enquiryLink('Color Matching','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Bumper Painting</p>
+      <a href="#" onclick="this.href=enquiryLink('Bumper Painting','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="150" class="lift-card bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <p class="font-display font-semibold text-tvsnavy">Polishing</p>
+      <a href="#" onclick="this.href=enquiryLink('Polishing','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ WELDING WORKS ============ -->
+<section class="bg-ice py-16">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+      <div class="w-12 h-12 rounded-xl bg-tvsblue/10 flex items-center justify-center text-tvsblue text-xl"><i class="fa-solid fa-fire-flame-simple"></i></div>
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Welding Works</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article data-aos="fade-up" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Body Welding</p>
+        <a href="#" onclick="this.href=enquiryLink('Body Welding','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Frame Repair</p>
+        <a href="#" onclick="this.href=enquiryLink('Frame Repair','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="100" class="lift-card bg-white rounded-2xl p-6 shadow-sm">
+        <p class="font-display font-semibold text-tvsnavy">Metal Fabrication</p>
+        <a href="#" onclick="this.href=enquiryLink('Metal Fabrication','service')" class="mt-4 inline-flex items-center gap-2 text-wagreen font-display font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMERGENCY SERVICE ============ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+  <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
+    <div class="w-12 h-12 rounded-xl bg-tvsyellow/20 flex items-center justify-center text-tvsnavy text-xl"><i class="fa-solid fa-truck-medical"></i></div>
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-tvsnavy">Emergency Service</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 gap-6">
+    <article data-aos="fade-up" class="lift-card bg-tvsnavy rounded-2xl p-6 shadow-sm text-white">
+      <p class="font-display font-semibold text-lg">Breakdown Assistance</p>
+      <p class="text-sm text-slate-300 mt-2">Doorstep support when your vehicle stops on the road.</p>
+      <a href="#" onclick="this.href=enquiryLink('Breakdown Assistance','service')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="50" class="lift-card bg-tvsnavy rounded-2xl p-6 shadow-sm text-white">
+      <p class="font-display font-semibold text-lg">Vehicle Pickup</p>
+      <p class="text-sm text-slate-300 mt-2">We arrange pickup of your vehicle to the workshop.</p>
+      <a href="#" onclick="this.href=enquiryLink('Vehicle Pickup','service')" class="mt-4 inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CTA STRIP ============ -->
+<section class="bg-tvsblue">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
+    <div>
+      <p class="font-display font-bold text-white text-lg">Need Auto Repair or Spare Parts?</p>
+      <p class="text-white/80 text-sm mt-1">Contact our workshop today for quick service and genuine parts.</p>
+    </div>
+    <div class="flex gap-3">
+      <a href="tel:+919841677317" class="inline-flex items-center gap-2 bg-tvsyellow text-tvsnavy font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a id="cta-wa" href="#" class="inline-flex items-center gap-2 bg-wagreen text-white font-display font-semibold text-sm px-5 py-2.5 rounded-full">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-tvsnavy text-slate-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-tvsyellow flex items-center justify-center text-tvsnavy font-display font-bold">SL</div>
+        <p class="font-display font-bold text-white">Sri Lekha Auto Spares &amp; Workshop</p>
+      </div>
+      <p class="text-sm">TVS King Certified Service Point — auto repair, painting and genuine spare parts in Chennai.</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Address</p>
+      <p class="text-sm leading-relaxed">No. 64, Kakkan Nagar, 2nd Main Road,<br>Ex Serviceman Colony, ASK Nagar,<br>PS Paramesh Nagar, Chennai - 600094.</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Contact</p>
+      <p class="text-sm flex items-center gap-2 mb-2"><i class="fa-solid fa-phone text-tvsyellow"></i> <a href="tel:+919841677317" class="hover:text-white">+91 98416 77317</a></p>
+      <p class="text-sm flex items-center gap-2"><i class="fa-brands fa-whatsapp text-wagreen"></i> <a id="footer-wa" href="#" class="hover:text-white">Chat on WhatsApp</a></p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-3">Working Hours</p>
+      <p class="text-sm">Mon – Sat: 9:00 AM – 8:00 PM</p>
+      <p class="text-sm">Sunday: 10:00 AM – 5:00 PM</p>
+      <div class="flex gap-3 mt-4">
+        <a href="index.html" class="text-sm hover:text-white underline underline-offset-4">Home</a>
+        <a href="products.html" class="text-sm hover:text-white underline underline-offset-4">Products</a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">
+    © <span data-year></span> Sri Lekha Auto Spares &amp; Workshop. All rights reserved.
+  </div>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+  <a id="fab-wa" href="#" aria-label="Chat on WhatsApp" class="fab fab-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="tel:+919841677317" aria-label="Call now" class="fab fab-call"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+<script src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  const svcWaMsg = "Hello Sri Lekha Auto Spares & Workshop,\n\nI'd like to enquire about a service. Please contact me.";
+  const svcWaLink = buildWhatsAppLink(svcWaMsg);
+  ["nav-wa", "nav-wa-mobile", "cta-wa", "footer-wa", "fab-wa"].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.href = svcWaLink;
+  });
+</script>
+</body>
+</html>
